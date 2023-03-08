@@ -2,6 +2,8 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 
+st.set_page_config(page_title="TEST: ¿Qué personaje de Animal Crossing eres?", page_icon="🍃")
+
 # Cargamos los datos y los almacenamos en caché
 @st.cache_data
 def load_data():
