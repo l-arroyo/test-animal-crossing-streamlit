@@ -7,25 +7,21 @@
 Diseño de un cuadro de mandos personal para visualización e interacción con un conjunto de datos.
 
 ## Los datos
-Elige un conjunto de datos que te interese: educación, deportes, trabajo, música, econocomía, etc. 
+He escogido hacer un test con los datos del videojuego Animal Crossing: New Horizons. En concreto, he escogido los datos de los vecinos que puedes tener, sus gustos, mes de nacimiento y sus personalidades.
 
 ## Búsqueda de los datos
-Busca una fuente para tus datos. Puedes usar una API de un portal de datos abiertos, un conjunto ya publicado, recopilar personalmente datos por scraping, etc.
+Los datos han sido extraídos de [esta página](https://www.kaggle.com/datasets/jessicali9530/animal-crossing-new-horizons-nookplaza-dataset?select=villagers.csv), y he hecho un scrapping de [este datasheet](https://nookipedia.com/wiki/Community:ACNH_Spreadsheet) para añadir los links de las imágenes de cada vecino (el script puede verse en [scrapping.py](./scrapping.py)).
 
 ## Documentación de los datos
-Documenta los datos que vas a usar y su origen. De dónde los has sacado, fuentes, etc. Describe los campos, los valores, las unidades, etc.
+Los datos están en formato csv, y he hecho uso de las siguientes columnas: 
+ - `name`: nombre del vecino
+ - `personality`: personalidad del vecino
+ - `birthday`: fecha de nacimiento del vecino
+ - `hobby`: hobbies del vecino
+ - `image`: link de la imagen del vecino que he extraído del scrapping
 
-## Prepara tu aplicación.
-La aplicación se llamará `app.py`. Añade un `requirements.txt` con las dependencias de tu aplicación. Ve actualizándolo a medida que vayas añadiendo librerías.
-
-## Carga y análisis de conjunto de dato con pandas
-Carga el conjunto de datos en un dataframe de pandas y realiza un análisis exploratorio de los datos.
-
-## Visualización de los datos
-Prepara visualizaciones diferentes del dataframe en texto (tablas) o gráficas (histogramas, barras, etc.). Puedes usar matplotlib, seaborn, plotly, etc.
-
-## Diseña la interacción que van a tener tus datos
-Qué inputs y outputs tendrán tus datos. 
+## Aplicación y dependencias.
+La aplicación se llama `app.py`. Y las dependencias están registradas en el fichero `requirements.txt`.
 
 ## Prepara la aplicación (cuadro de mandos) con Streamlit
 Prepara y prueba la aplicación.
